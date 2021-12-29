@@ -4,12 +4,17 @@
     "@babel/preset-react",
     "@babel/preset-typescript"
   ],
-  "plugins": [
-    [
-      "@babel/plugin-transform-runtime",
-      {
-        "regenerator": true
-      }
-    ]
+  "plugins": [        
+    "babel-plugin-macros",
+    "styled-components",
+    "react-hot-loader/babel",
+    "@babel/transform-runtime",
+    "@babel/transform-react-jsx",
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread",
+    "@babel/proposal-optional-chaining",
+    "@babel/proposal-nullish-coalescing-operator",
+    "@babel/syntax-dynamic-import",
+    "macro"
   ]
 }

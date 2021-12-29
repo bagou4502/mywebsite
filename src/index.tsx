@@ -1,13 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { setConfig } from 'react-hot-loader';
+import Main from './components/Main';
 
-const App = () => (
-  <h1>My React and TypeScript App!! {new Date().toLocaleDateString()}</h1>
-);
+setConfig({ reloadHooks: false });
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<Main/>, document.getElementById('root'));
